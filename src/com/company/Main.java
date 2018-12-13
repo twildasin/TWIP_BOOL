@@ -27,12 +27,12 @@ public class Main {
         expression = expression.replaceAll("B", "1");
         */
 
-
-        System.out.println(expression);
-
+        System.out.println("A\t" + "B\t" + expression);
 
         System.out.println(solver.solve(expression, 0, 0));
-
+        System.out.println(solver.solve(expression, 0, 1));
+        System.out.println(solver.solve(expression, 1, 0));
+        System.out.println(solver.solve(expression, 1, 1));
 
     }
 
